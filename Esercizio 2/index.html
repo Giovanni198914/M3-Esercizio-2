@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+
+    <style>
+        span {
+            border-radius: 25em;
+            background-color: #ffdf7e;
+            height: 40px;
+            width: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+
+
+        }
+
+        header {
+            background-color: #fef7e2;
+            height: 100px;
+            border-radius: 25em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        body {
+            width: 90%;
+            margin-left: 80px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        span:nth-of-type(3) {
+            display: flex;
+            flex-grow: 2;
+            font-weight: bold;
+            font-size: 30px;
+            height: 70px;
+            justify-content: space-evenly;
+
+        }
+
+        span:nth-of-type(3) img {
+            width: 50px;
+            height: 40px;
+        }
+
+        article {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+            background-color: #fef7e2;
+            border-radius: 10px;
+            margin-top: 50px;
+            min-height: 400px;
+            --imagewidth: 350px;
+            /* per far andare l'immagine sotto il testo*/
+            gap: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        article img {
+            width: var (--image width);
+            height: 300px;
+        }
+
+        article div {
+            width: var(--imagewidth);
+            /* per far andare l'immagine sotto il testo*/
+            flex-basis: 50%;
+        }
+
+        section img {
+            width: 300px;
+            height: 250px;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            margin-top: 20px;
+        }
+
+        section>div {
+            background-color: #fef7e2;
+            width: 300px;
+            height: 150px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly
+        }
+
+        h2 {
+            margin: 0;
+
+
+        }
+
+        button {
+            background-color: #ffdf7e;
+            width: 100px;
+            height: 40px;
+            border-radius: 25em;
+            border: none;
+            font-size: 15px;
+        }
+
+        section>div>div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        section>div>div>div:last-of-type {
+            font-size: 20px;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+
+        <span>
+            Our Honey
+        </span>
+        <span>
+            Trace Honey
+        </span>
+        <span>
+            <img src="Assets/logo.png">SHOP
+        </span>
+        <span>
+            Facilities
+        </span>
+        <span>
+            Contacts
+        </span>
+
+    </header>
+
+    <article>
+
+        <img src="Assets/honey.jpg">
+        <div>
+            <h1>Our delicious honey</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Accumsan sit amet nulla facilisi morbi tempus. Interdum consectetur libero id
+                faucibus nisl tincidunt eget. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor.
+                Tortor at auctor urna nunc. Felis donec et odio pellentesque diam volutpat commodo. Sapien nec sagittis
+                aliquam malesuada bibendum. Tempus iaculis urna id volutpat lacus laoreet non. Luctus accumsan tortor
+                posuere ac ut. Elementum curabitur vitae nunc sed. Vestibulum morbi blandit cursus risus at ultrices mi
+                tempus imperdiet. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat.
+
+                Arcu bibendum at varius vel pharetra vel turpis nunc eget. Nullam vehicula ipsum a arcu cursus vitae.
+                Cras pulvinar mattis nunc sed blandit libero volutpat. Commodo ullamcorper a lacus vestibulum sed arcu
+                non odio. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Mollis nunc sed id semper
+                risus in. Convallis tellus id interdum velit laoreet id donec ultrices tincidunt. Ac ut consequat semper
+                viverra nam libero. Hendrerit gravida rutrum quisque non tellus orci. Sit amet nulla facilisi morbi.
+                Pharetra pharetra massa massa ultricies mi quis hendrerit. Ac feugiat sed lectus vestibulum mattis
+                ullamcorper. Id volutpat lacus laoreet non curabitur gravida arcu ac. Fermentum iaculis eu non diam
+                phasellus vestibulum lorem. Arcu felis bibendum ut tristique. Aenean vel elit scelerisque mauris
+                pellentesque pulvinar.
+
+                Sit amet porttitor eget dolor morbi. Nisl vel pretium lectus quam id leo in. Eu ultrices vitae auctor eu
+                augue ut. Quam id leo in vitae turpis massa sed elementum.</p>
+        </div>
+
+    </article>
+
+    <section>
+        <img src="Assets/honey.jpg">
+        <div>
+            <div>
+                <div>
+                    <h2>100% Bio Honey</h2>
+                    <p>Italian, not treated</p>
+                </div>
+                <div>
+                    7$/Kg
+                </div>
+            </div>
+            <button>Add to Cart</button>
+
+        </div>
+    </section>
+
+    <script>
+        function addToCart() {
+            const cart = document.querySelector('button')
+            cart.addEventListener('click', function (event) {
+                alert('Article has been added to cart');
+            });
+        }
+        window.onload = function () {
+            addToCart()
+        }
+    </script>
+
+
+</body>
+
+</html>
